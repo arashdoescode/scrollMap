@@ -1,25 +1,76 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZYA-TG-a6Y">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="CQz-u8-ple">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ZYA-TG-a6Y" customClass="ViewController" customModule="scrollMap" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="1WJ-vU-nHH"/>
+                        <viewControllerLayoutGuide type="bottom" id="Chf-I4-3Ec"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="rrh-ek-q0q">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W7C-yQ-Ihi" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="20" width="600" height="402"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="naufal2" translatesAutoresizingMaskIntoConstraints="NO" id="Mfa-Sv-Kyb">
+                                <rect key="frame" x="33" y="477" width="55" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="xQv-HE-9cX"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Naufal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXu-UC-1sx">
+                                <rect key="frame" x="26" y="549" width="68" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="lSA-vz-MiQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restoran Patatimo, D'Wangsa, 11, Jalan Wangsa Delima 10, Wangsa Maju, 53300 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iAw-if-tk0">
+                                <rect key="frame" x="96" y="477" width="414" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Mfa-Sv-Kyb" firstAttribute="top" secondItem="W7C-yQ-Ihi" secondAttribute="bottom" constant="55" id="15E-FI-wLD"/>
+                            <constraint firstItem="iAw-if-tk0" firstAttribute="leading" secondItem="Mfa-Sv-Kyb" secondAttribute="trailing" constant="8" symbolic="YES" id="CZ1-p9-hsc"/>
+                            <constraint firstItem="SXu-UC-1sx" firstAttribute="leading" secondItem="rrh-ek-q0q" secondAttribute="leadingMargin" constant="6" id="E77-Zd-w6J"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iAw-if-tk0" secondAttribute="trailing" constant="70" id="IXq-9t-4AZ"/>
+                            <constraint firstAttribute="trailing" secondItem="W7C-yQ-Ihi" secondAttribute="trailing" id="Ooc-xB-Kt6"/>
+                            <constraint firstItem="Mfa-Sv-Kyb" firstAttribute="leading" secondItem="rrh-ek-q0q" secondAttribute="leadingMargin" constant="13" id="QEF-7f-jSD"/>
+                            <constraint firstItem="W7C-yQ-Ihi" firstAttribute="top" secondItem="1WJ-vU-nHH" secondAttribute="bottom" id="cig-1a-awv"/>
+                            <constraint firstItem="SXu-UC-1sx" firstAttribute="top" secondItem="Mfa-Sv-Kyb" secondAttribute="bottom" constant="15" id="j7R-P4-S3k"/>
+                            <constraint firstItem="W7C-yQ-Ihi" firstAttribute="leading" secondItem="rrh-ek-q0q" secondAttribute="leading" id="oob-SR-8cm"/>
+                            <constraint firstItem="Mfa-Sv-Kyb" firstAttribute="centerX" secondItem="SXu-UC-1sx" secondAttribute="centerX" id="r4X-YN-cLY"/>
+                            <constraint firstItem="Mfa-Sv-Kyb" firstAttribute="top" secondItem="iAw-if-tk0" secondAttribute="top" id="rLC-ix-vCE"/>
+                            <constraint firstItem="Chf-I4-3Ec" firstAttribute="top" secondItem="W7C-yQ-Ihi" secondAttribute="bottom" constant="178" id="sWP-Ko-MBG"/>
+                            <constraint firstAttribute="bottom" secondItem="SXu-UC-1sx" secondAttribute="bottom" constant="20" symbolic="YES" id="t9c-Ah-8F6"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="W7C-yQ-Ihi" id="aiB-BU-Um6"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8nA-Ml-VFF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2061" y="1984"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="naufal2" width="251" height="246"/>
+    </resources>
 </document>
