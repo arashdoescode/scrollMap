@@ -12,10 +12,13 @@
 		5B643CC81D0D60B800F51A64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B643CC61D0D60B800F51A64 /* Main.storyboard */; };
 		5B643CCA1D0D60B800F51A64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B643CC91D0D60B800F51A64 /* Assets.xcassets */; };
 		5B643CCD1D0D60B800F51A64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B643CCB1D0D60B800F51A64 /* LaunchScreen.storyboard */; };
-		663D3C8D1FBB4B11D658BE31 /* Pods_scrollMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C523358814E9FBB212DA88 /* Pods_scrollMap.framework */; };
+		A16E06642552744F2E012AC1 /* Pods_scrollMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D9E67A904B48C0016CBA36 /* Pods_scrollMap.framework */; };
+		A8A6C7731D0D939E004306F6 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A6C7721D0D939E004306F6 /* UIColor+Hex.swift */; };
+		A8C052331D0D808D00855B0D /* CXScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C052321D0D808D00855B0D /* CXScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1393BDC85349D972804D70BE /* Pods-scrollMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scrollMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-scrollMap/Pods-scrollMap.debug.xcconfig"; sourceTree = "<group>"; };
 		5B643CBF1D0D60B700F51A64 /* scrollMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scrollMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B643CC21D0D60B800F51A64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B643CC41D0D60B800F51A64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -23,9 +26,10 @@
 		5B643CC91D0D60B800F51A64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B643CCC1D0D60B800F51A64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B643CCE1D0D60B800F51A64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A0E34D437C90FC7ACBA14DE7 /* Pods-scrollMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scrollMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-scrollMap/Pods-scrollMap.debug.xcconfig"; sourceTree = "<group>"; };
-		C9C523358814E9FBB212DA88 /* Pods_scrollMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_scrollMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E10851A4CF3B5019FB96B3CF /* Pods-scrollMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scrollMap.release.xcconfig"; path = "Pods/Target Support Files/Pods-scrollMap/Pods-scrollMap.release.xcconfig"; sourceTree = "<group>"; };
+		A8A6C7721D0D939E004306F6 /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		A8C052321D0D808D00855B0D /* CXScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CXScrollView.swift; sourceTree = "<group>"; };
+		B3D9E67A904B48C0016CBA36 /* Pods_scrollMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_scrollMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC657672186C8FBF8263F784 /* Pods-scrollMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scrollMap.release.xcconfig"; path = "Pods/Target Support Files/Pods-scrollMap/Pods-scrollMap.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,28 +37,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				663D3C8D1FBB4B11D658BE31 /* Pods_scrollMap.framework in Frameworks */,
+				A16E06642552744F2E012AC1 /* Pods_scrollMap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		405488906D410D34B9B1A6B2 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C9C523358814E9FBB212DA88 /* Pods_scrollMap.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		5B643CB61D0D60B700F51A64 = {
 			isa = PBXGroup;
 			children = (
 				5B643CC11D0D60B800F51A64 /* scrollMap */,
 				5B643CC01D0D60B700F51A64 /* Products */,
-				9D48A7ADCA82EC5D0D15C851 /* Pods */,
-				405488906D410D34B9B1A6B2 /* Frameworks */,
+				D22849AC5459EA934B4178EC /* Pods */,
+				5D5098DD1AD55D13D8E81B30 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +67,8 @@
 			children = (
 				5B643CD41D0D61AC00F51A64 /* Supporting Files */,
 				5B643CC41D0D60B800F51A64 /* ViewController.swift */,
+				A8C052321D0D808D00855B0D /* CXScrollView.swift */,
+				A8A6C7721D0D939E004306F6 /* UIColor+Hex.swift */,
 				5B643CC61D0D60B800F51A64 /* Main.storyboard */,
 			);
 			path = scrollMap;
@@ -87,11 +85,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		9D48A7ADCA82EC5D0D15C851 /* Pods */ = {
+		5D5098DD1AD55D13D8E81B30 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A0E34D437C90FC7ACBA14DE7 /* Pods-scrollMap.debug.xcconfig */,
-				E10851A4CF3B5019FB96B3CF /* Pods-scrollMap.release.xcconfig */,
+				B3D9E67A904B48C0016CBA36 /* Pods_scrollMap.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D22849AC5459EA934B4178EC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1393BDC85349D972804D70BE /* Pods-scrollMap.debug.xcconfig */,
+				EC657672186C8FBF8263F784 /* Pods-scrollMap.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -103,12 +109,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B643CD11D0D60B800F51A64 /* Build configuration list for PBXNativeTarget "scrollMap" */;
 			buildPhases = (
-				D73C671549C17168C1E305E0 /* Check Pods Manifest.lock */,
+				04B83E4116A339E901049E01 /* [CP] Check Pods Manifest.lock */,
 				5B643CBB1D0D60B700F51A64 /* Sources */,
 				5B643CBC1D0D60B700F51A64 /* Frameworks */,
 				5B643CBD1D0D60B700F51A64 /* Resources */,
-				B1869AAAE47CDE64B814BC1D /* Embed Pods Frameworks */,
-				C5B3661E636A749FF64E0AB1 /* Copy Pods Resources */,
+				0634AA9181964638974B697C /* [CP] Embed Pods Frameworks */,
+				276C8CD5286DF88F1DCDFF80 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,7 +137,6 @@
 				TargetAttributes = {
 					5B643CBE1D0D60B700F51A64 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = VCERN8D3L6;
 					};
 				};
 			};
@@ -167,14 +172,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		B1869AAAE47CDE64B814BC1D /* Embed Pods Frameworks */ = {
+		04B83E4116A339E901049E01 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		0634AA9181964638974B697C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -182,34 +202,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-scrollMap/Pods-scrollMap-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C5B3661E636A749FF64E0AB1 /* Copy Pods Resources */ = {
+		276C8CD5286DF88F1DCDFF80 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-scrollMap/Pods-scrollMap-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D73C671549C17168C1E305E0 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -219,6 +224,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8C052331D0D808D00855B0D /* CXScrollView.swift in Sources */,
+				A8A6C7731D0D939E004306F6 /* UIColor+Hex.swift in Sources */,
 				5B643CC51D0D60B800F51A64 /* ViewController.swift in Sources */,
 				5B643CC31D0D60B800F51A64 /* AppDelegate.swift in Sources */,
 			);
@@ -333,9 +340,10 @@
 		};
 		5B643CD21D0D60B800F51A64 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A0E34D437C90FC7ACBA14DE7 /* Pods-scrollMap.debug.xcconfig */;
+			baseConfigurationReference = 1393BDC85349D972804D70BE /* Pods-scrollMap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = scrollMap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = arash.scrollMap;
@@ -345,9 +353,10 @@
 		};
 		5B643CD31D0D60B800F51A64 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E10851A4CF3B5019FB96B3CF /* Pods-scrollMap.release.xcconfig */;
+			baseConfigurationReference = EC657672186C8FBF8263F784 /* Pods-scrollMap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = scrollMap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = arash.scrollMap;

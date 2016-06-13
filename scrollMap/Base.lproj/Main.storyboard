@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZYA-TG-a6Y">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZYA-TG-a6Y">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -18,6 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nf0-gz-1eL" customClass="CXScrollView" customModule="scrollMap" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W7C-yQ-Ihi" customClass="GMSMapView">
                                 <rect key="frame" x="0.0" y="20" width="600" height="402"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -34,35 +37,40 @@
                                     <constraint firstAttribute="height" constant="31" id="lSA-vz-MiQ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restoran Patatimo, D'Wangsa, 11, Jalan Wangsa Delima 10, Wangsa Maju, 53300 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iAw-if-tk0">
                                 <rect key="frame" x="96" y="477" width="414" height="61"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="nf0-gz-1eL" firstAttribute="top" secondItem="rrh-ek-q0q" secondAttribute="top" id="02s-h1-ebR"/>
                             <constraint firstItem="Mfa-Sv-Kyb" firstAttribute="top" secondItem="W7C-yQ-Ihi" secondAttribute="bottom" constant="55" id="15E-FI-wLD"/>
                             <constraint firstItem="iAw-if-tk0" firstAttribute="leading" secondItem="Mfa-Sv-Kyb" secondAttribute="trailing" constant="8" symbolic="YES" id="CZ1-p9-hsc"/>
+                            <constraint firstItem="nf0-gz-1eL" firstAttribute="leading" secondItem="rrh-ek-q0q" secondAttribute="leading" id="Dq1-mj-Ex1"/>
                             <constraint firstItem="SXu-UC-1sx" firstAttribute="leading" secondItem="rrh-ek-q0q" secondAttribute="leadingMargin" constant="6" id="E77-Zd-w6J"/>
                             <constraint firstAttribute="trailingMargin" secondItem="iAw-if-tk0" secondAttribute="trailing" constant="70" id="IXq-9t-4AZ"/>
                             <constraint firstAttribute="trailing" secondItem="W7C-yQ-Ihi" secondAttribute="trailing" id="Ooc-xB-Kt6"/>
                             <constraint firstItem="Mfa-Sv-Kyb" firstAttribute="leading" secondItem="rrh-ek-q0q" secondAttribute="leadingMargin" constant="13" id="QEF-7f-jSD"/>
                             <constraint firstItem="W7C-yQ-Ihi" firstAttribute="top" secondItem="1WJ-vU-nHH" secondAttribute="bottom" id="cig-1a-awv"/>
                             <constraint firstItem="SXu-UC-1sx" firstAttribute="top" secondItem="Mfa-Sv-Kyb" secondAttribute="bottom" constant="15" id="j7R-P4-S3k"/>
+                            <constraint firstItem="Chf-I4-3Ec" firstAttribute="top" secondItem="nf0-gz-1eL" secondAttribute="bottom" id="nOe-oR-OPu"/>
                             <constraint firstItem="W7C-yQ-Ihi" firstAttribute="leading" secondItem="rrh-ek-q0q" secondAttribute="leading" id="oob-SR-8cm"/>
                             <constraint firstItem="Mfa-Sv-Kyb" firstAttribute="centerX" secondItem="SXu-UC-1sx" secondAttribute="centerX" id="r4X-YN-cLY"/>
                             <constraint firstItem="Mfa-Sv-Kyb" firstAttribute="top" secondItem="iAw-if-tk0" secondAttribute="top" id="rLC-ix-vCE"/>
+                            <constraint firstAttribute="trailing" secondItem="nf0-gz-1eL" secondAttribute="trailing" id="s3d-1A-XeV"/>
                             <constraint firstItem="Chf-I4-3Ec" firstAttribute="top" secondItem="W7C-yQ-Ihi" secondAttribute="bottom" constant="178" id="sWP-Ko-MBG"/>
                             <constraint firstAttribute="bottom" secondItem="SXu-UC-1sx" secondAttribute="bottom" constant="20" symbolic="YES" id="t9c-Ah-8F6"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="mapView" destination="W7C-yQ-Ihi" id="aiB-BU-Um6"/>
+                        <outlet property="scrollView" destination="nf0-gz-1eL" id="Bd7-yo-xfH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8nA-Ml-VFF" userLabel="First Responder" sceneMemberID="firstResponder"/>
